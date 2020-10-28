@@ -21,12 +21,12 @@ the policy is trained by playing against itself.
 ## Parameters
 The play_self function in TTT.py has several parameters that change
 its behaviour:
--generations  ... games to be played
--agent  ...  takes a policy object to be trained(playing with 'X')
--opponent ... also takes a policy object to be trained(playing with 'O')
--prnt ... this flag can be true if you want to print out the moves
--xplr ... takes a float value that specifies the percentage of exploration moves
--init_xplr  ... takes a float value, exploration rate of the first move of a game
--learn_factor ... this is a in Q(s-1) += a*(Q(s) - Q(s-1))
--l_scale  ... if true, the learning rate scales towards 0 in linear fashion as the game count approaches generations
--xpl_scale  ... if true, the exploration rate decays (analog to l_scale)
+- generations  ... games to be played
+- agent  ...  takes a policy object to be trained(playing with 'X')
+- opponent ... also takes a policy object to be trained(playing with 'O')
+- prnt ... this flag can be true if you want to print out the moves
+- xplr ... takes a float value that specifies the percentage of exploration moves
+- init_xplr  ... takes a float value, exploration rate of the first move of a game
+- learn_factor ... this is a in Q(s-1) += a*(Q(s) - Q(s-1))
+- l_scale  ... if true, the learning rate scales towards 0 in linear fashion as the game count approaches generations
+- xpl_scale  ... if true, the exploration rate decays (analog to l_scale)
