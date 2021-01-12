@@ -16,8 +16,6 @@ Q(s-1) += a*(Q(s) - Q(s-1))
 (where Q(x) = value of state x; s = current state, s-1 = state after last move. note that between
 s-1 and s, the opponent has also made a move) 
 
-the policy is trained by playing against itself.
-
 ## Parameters
 The play_self function in TTT.py has several parameters that change
 its behaviour:
